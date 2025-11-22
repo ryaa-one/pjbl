@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EvenTura </title>
+    <link rel="stylesheet" type="text/css" href="eventBaru.css">
+</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="gambar-logo" src="logo4.png" />
+        <h1 class="EvenTura">EvenTura</h1>
+        <nav>
+            <ul>
+                <li><a href="landing-page.html">Beranda</a></li>
+                <li><a href="jelajah.html" class="active">Event</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+            </ul>
+            <div class="user-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-item"> Dashboard </div>
+            <div class="sidebar-item active"> Event </div>
+            <div class="sidebar-item"> Pengaturan </div>
+            <div class="sidebar-item"> Logout </div>
+        </aside>
+
+        <main class="content">
+            <h1><a href="event.html"><img src="panah.png" class="btn-pnh"></a> Buat Event Baru </h1>
+
+            <form>
+                <div class="form-grup">
+                    <label> Event Name </label>
+                    <input type="text" class="form-input" value="Festival Danau Toba">
+                </div>
+
+                <div class="form-grup">
+                    <label> Description</label>
+                    <textarea class="form-input">Festival Danau Toba adalah acara tahunan yang menampilkan budaya Batak, termasuk pertunjukan seni, pameran kerajinan, dan kompetisi perahu tradisional.</textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-grup">
+                        <label> Category </label>
+                        <select class="form-input">
+                            <option> Culture </option>
+                            <option> Music </option>
+                            <option> Art </option>
+                        </select>
+                    </div>
+
+                    <div class="form-grup">
+                        <label> Date </label>
+                        <input type="date" class="form-input" value="08/15/2024">
+                    </div>
+                </div>
+
+                <div class="form-grup">
+                    <label> Location </label>
+                    <input type="text" class="form-input" value="Lake Toba, Nort Sumatra">
+                </div>
+
+                <div class="form-grup">
+                    <label> Event Image </label>
+                    <div class="upload-area">
+                        <div class="upload-text">
+                            <a href="#">Upload a file </a> or drag and drop
+                        </div>
+                        <div class="upload-info"> PNG, JPG, GIF up to 10MB</div>
+                    </div>
+                </div>
+
+                <div class="tombol">
+                    <button type="reset" class="btn btn-cancel"> Cancel </button>
+                    <button type="submit" class="btn btn-simpan"> Save Change </button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

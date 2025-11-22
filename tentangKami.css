@@ -6,60 +6,9 @@
 
 /* DOUBLE */
 .teks-h2 {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   margin-bottom: 28px;
-}
-
-/* HEADER */
-header {
-  background: #ffffff;
-  color: #000000;
-  padding: 20px 88px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-}
-
-.EvenTura {
-  font-family: sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  padding-left: 8px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  flex: 1;
-  margin: 0;
-  padding: 0;
-  top: 0;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  color: #000000;
-  font-family: Montserrat;
-  font-size: medium;
-  font-weight: 15;
-  text-decoration: none;
 }
 
 /* Hero Section */
@@ -109,8 +58,8 @@ ul {
   list-style: none;
 }
 
-.list-teks ul li{
-  padding-bottom: 52px;
+.list-teks ul li {
+  padding-bottom: 52.5px;
 }
 
 .one {
@@ -118,91 +67,112 @@ ul {
   font-size: 16px;
 }
 
-/* Footer */
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: sans-serif;
-    width: 100%;
-    height: 257px;
-    background-color: #f5e7b2;
-    padding: 22px 87px 22px 88px;
+/* ============================================ */
+/* TABLET RESPONSIVE (max-width: 1200px) */
+/* ============================================ */
+@media screen and (max-width: 1200px) {
+  /* Hero Section */
+  .gambar-hero {
+    margin-left: 60px;
+    margin-right: 60px;
+    width: calc(100% - 120px);
   }
 
-  #satu {
-    color: #000000;
-    font-weight: bold;
+  /* Definisi Section */
+  .teks-definisi {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  /* Filosofi Section */
+  .filosofi-kami {
+    margin: 22px 60px;
+  }
+
+  /* Proses Section */
+  .proses-kami {
+    margin: 22px 60px;
+  }
+
+  .all-list {
+    gap: 15px;
+  }
+
+  .list-gambar ul li img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .list-teks ul li {
+    padding-bottom: 40px;
+  }
+}
+
+/* ============================================ */
+/* MOBILE RESPONSIVE (max-width: 600px) */
+/* ============================================ */
+@media screen and (max-width: 600px) {
+  /* Typography Adjustments */
+  .teks-h2 {
     font-size: 20px;
+    margin-bottom: 20px;
   }
 
-  #dua {
-    color: #625c48;
-    font-size: 10px;
+  /* Hero Section */
+  .gambar-hero {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
   }
 
-  .footer-atas {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #aa554b;
-    margin: 0 -89px 22px -87px;
-    padding: 22px 88px;
+  /* Definisi Section */
+  .teks-definisi {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: justify;
   }
 
-  .logo_eventura {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 5px;
+  .teks-definisi br {
+    display: none;
   }
 
-  .kanan-atas {
-    display: flex;
-    gap: 60px;
-    color: #312e24;
-    margin-bottom: 12px;
+  /* Filosofi Section */
+  .filosofi-kami {
+    margin: 20px 20px;
+    font-size: 14px;
+    text-align: justify;
   }
 
-  .kanan-atas ul {
-    list-style: none;
+  .filosofi-kami br {
+    display: none;
   }
 
-  .navigasi {
-    width: 81px;
-  }
-
-  .navigasi li {
-    margin-bottom: 12px;
-  }
-
-  .kanan-satu {
-    color: #aa554b;
-    font-weight: bold;
-  }
-
-  .kanan-dua {
-    color: #973131;
-    font-weight: bold;
-  }
-
-  .contact li {
-    margin-bottom: 12px;
-  }
-
-  .footer-bawah {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .kiri-bawah {
-    display: flex;
-    gap: 24px;
-  }
-
-  .kanan-bawah {
-    color: #625c47;
-    font-family: sans-serif;
-    font-size: medium;
+  /* Proses Section */
+  .proses-kami {
+    margin: 20px 20px;
     font-size: 14px;
   }
 
+  .all-list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .list-gambar {
+    display: none;
+  }
+
+  .list-teks ul li {
+    padding-bottom: 30px;
+    text-align: justify;
+  }
+
+  .one {
+    font-size: 15px;
+    margin-bottom: 8px;
+    display: block;
+  }
+}

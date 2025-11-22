@@ -5,20 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EvenTura</title>
     <link rel="stylesheet" type="text/css" href="styleEvenTura.css" />
+    <link rel="stylesheet" type="text/css" href="navbar.css" />
+    <link rel="stylesheet" type="text/css" href="footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <img class="gambar-logo" src="logo-web.svg" />
+      <img class="gambar-logo" src="Gambar-gambar/logo-web.svg" />
       <h1 class="EvenTura">EvenTura</h1>
-      <nav>
+
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav id="nav">
         <ul>
-          <li class="beranda"><a href="">Beranda</a></li>
+          <li class="beranda"><a href="EvenTura.html">Beranda</a></li>
           <li><a href="">Event</a></li>
-          <li><a href="">Tentang kami</a></li>
+          <li><a href="tentangKami.html">Tentang kami</a></li>
         </ul>
         <div class="button-navbar">
-          <button class="masuk">Masuk</button>
-          <button class="daftar">Daftar</button>
+          <a href="masuk.html"><button class="masuk">Masuk</button></a>
+          <a href="login.html"><button class="daftar">Daftar</button></a>
         </div>
       </nav>
     </header>
@@ -47,76 +63,90 @@
     </div>
 
     <div class="frame-96">
-  <div class="populer">
-    <!-- Header -->
-    <h1 class="title">POPULER</h1>
-    <div class="line-horizontal line-left"></div>
-    <div class="line-horizontal line-right"></div>
-    <div class="line-vertical"></div>
+      <div class="populer">
+        <!-- Header -->
+        <h1 class="title">POPULER</h1>
+        <div class="line-horizontal line-left"></div>
+        <div class="line-horizontal line-right"></div>
+        <div class="line-vertical"></div>
 
-    <!-- Event 1: Tari Kecak -->
-    <div class="placeholder-box box1"><img src="gambar-tk1.png"></div>
-    <div class="placeholder-box box2"><img src="gambar-tk2.png"></div>
-    <div class="placeholder-box box3"><img src="gambar-tk3.png"></div>
+        <!-- Event 1: Tari Kecak -->
+        <div class="placeholder-box box1">
+          <img src="Gambar-gambar/gambar-tk1.png" />
+        </div>
+        <div class="placeholder-box box2">
+          <img src="Gambar-gambar/gambar-tk2.png" />
+        </div>
+        <div class="placeholder-box box3">
+          <img src="Gambar-gambar/gambar-tk3.png" />
+        </div>
 
-    <div class="event-title event1-title">Event Tari Kecak</div>
-    <div class="event-line event1-line"></div>
-    <p class="event-description event1-desc">
-      drama tari yang mementaskan kisah epos Ramayana dengan alunan suara
-      "cak" dari puluhan penari laki-laki sebagai musik pengiring utama, 
-      dan diiringi gerakan serta tarian yang memukau.
-    </p>
-    <div class="full-stop stop1"></div>
-    <p class="event-description event1-detail">
-      Festival ini dilaksanan setiap hari dengan dua sesi pertunjukkan:
-      pukul 18:00-19:00 dan pukul 19:00-20:00 WITA.<br>
-      Lokasi paling populernya di Pura Uluwatu.
-    </p>
-    <div class="full-stop stop2"></div>
+        <div class="event-title event1-title">Event Tari Kecak</div>
+        <div class="event-line event1-line"></div>
+        <p class="event-description event1-desc">
+          drama tari yang mementaskan kisah epos Ramayana dengan alunan suara
+          "cak" dari puluhan penari laki-laki sebagai musik pengiring utama, dan
+          diiringi gerakan serta tarian yang memukau.
+        </p>
+        <div class="full-stop stop1"></div>
+        <p class="event-description event1-detail">
+          Festival ini dilaksanan setiap hari dengan dua sesi pertunjukkan:
+          pukul 18:00-19:00 dan pukul 19:00-20:00 WITA.<br />
+          Lokasi paling populernya di Pura Uluwatu.
+        </p>
+        <div class="full-stop stop2"></div>
 
-    <!-- Event 2: Sawahlunto International Music Festival -->
-    <div class="placeholder-box box4"><img src="gambar-simf1.png"></div>
-    <div class="placeholder-box box5"><img src="gambar-simf2.png"></div>
-    <div class="placeholder-box box6"><img src="gambar-simf3.png"></div>
+        <!-- Event 2: Sawahlunto International Music Festival -->
+        <div class="placeholder-box box4">
+          <img src="Gambar-gambar/gambar-simf1.png" />
+        </div>
+        <div class="placeholder-box box5">
+          <img src="Gambar-gambar/gambar-simf2.png" />
+        </div>
+        <div class="placeholder-box box6">
+          <img src="Gambar-gambar/gambar-simf3.png" />
+        </div>
 
-    <div class="event-title event2-title">
-      Sawahlunto International Music Festival
+        <div class="event-title event2-title">
+          Sawahlunto International Music Festival
+        </div>
+        <div class="event-line event2-line"></div>
+        <p class="event-description event2-desc">
+          festival musik etnik, modern, dan kontemporer, sebagai bagian dari
+          perayaan ulang tahun kota dan upaya mempromosikan Sawahlunto sebagai
+          kota warisan dunia.
+        </p>
+        <div class="full-stop stop3"></div>
+        <p class="event-description event2-detail">
+          Festival ini dilaksanakan pada tanggal 10-11 Oktober 2025, yang
+          bertempat di Kota Sawahlunto, Sumatera Barat
+        </p>
+        <div class="full-stop stop4"></div>
+
+        <!-- Event 3: Art Jog -->
+        <div class="placeholder-box box7">
+          <img src="Gambar-gambar/gambar-aj1.png" />
+        </div>
+
+        <div class="event-title event3-title">Art Jog</div>
+        <div class="event-line event3-line"></div>
+        <p class="event-description event3-desc">
+          festival seni rupa kontemporer tahunan internasional yang berfungsi
+          sebagai pameran seni, ruang berbagi pengetahuan dan estetika, serta
+          ajang untuk mempertemukan seniman, publik, dan berbagai pemangku
+          kebijakan.
+        </p>
+        <div class="full-stop stop5"></div>
+        <p class="event-description event3-detail">
+          Festival ini dilaksanakan pada tanggal 10-11 Oktober 2025, yang
+          bertempat di Kota Sawahlunto, Sumatera Barat
+        </p>
+        <div class="full-stop stop6"></div>
+
+        <!-- Bottom Line -->
+        <div class="line-bottom"></div>
+      </div>
     </div>
-    <div class="event-line event2-line"></div>
-    <p class="event-description event2-desc">
-      festival musik etnik, modern, dan kontemporer, sebagai bagian dari
-      perayaan ulang tahun kota dan upaya mempromosikan Sawahlunto sebagai
-      kota warisan dunia.
-    </p>
-    <div class="full-stop stop3"></div>
-    <p class="event-description event2-detail">
-      Festival ini dilaksanakan pada tanggal 10-11 Oktober 2025, yang
-      bertempat di Kota Sawahlunto, Sumatera Barat
-    </p>
-    <div class="full-stop stop4"></div>
-
-    <!-- Event 3: Art Jog -->
-    <div class="placeholder-box box7"><img src="gambar-aj1.png"></div>
-    
-    <div class="event-title event3-title">Art Jog</div>
-    <div class="event-line event3-line"></div>
-    <p class="event-description event3-desc">
-      festival seni rupa kontemporer tahunan internasional yang berfungsi
-      sebagai pameran seni, ruang berbagi pengetahuan dan estetika, serta
-      ajang untuk mempertemukan seniman, publik, dan berbagai pemangku
-      kebijakan.
-    </p>
-    <div class="full-stop stop5"></div>
-    <p class="event-description event3-detail">
-      Festival ini dilaksanakan pada tanggal 10-11 Oktober 2025, yang
-      bertempat di Kota Sawahlunto, Sumatera Barat
-    </p>
-    <div class="full-stop stop6"></div>
-
-    <!-- Bottom Line -->
-    <div class="line-bottom"></div>
-  </div>
-</div>
 
     <h2 class="eventakandatang">Event Yang Akan Datang</h2>
     <div class="event-grid">
@@ -164,7 +194,7 @@
       <div class="footer-atas">
         <div class="kiri-atas">
           <div class="logo_eventura">
-            <img src="logo-web.svg">
+            <img src="Gambar-gambar/logo-web.svg" />
             <p id="satu">EvenTura</p>
           </div>
           <div>
@@ -193,14 +223,49 @@
       </div>
       <div class="footer-bawah">
         <div class="kiri-bawah">
-          <img src="vector-ig.png" />
-          <img src="vector-fb.png" />
-          <img src="vector-twit.png" />
+          <img src="Gambar-gambar/vector-ig.png" />
+          <img src="Gambar-gambar/vector-fb.png" />
+          <img src="Gambar-gambar/vector-twit.png" />
         </div>
         <div class="kanan-bawah">
           <p>© 2024 Island Events. All rights reserved.</p>
         </div>
       </div>
     </section>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const nav = document.getElementById("nav");
+
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("active");
+        nav.classList.toggle("active");
+      });
+
+      // Close menu when clicking on a link
+      const navLinks = nav.querySelectorAll("a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          hamburger.classList.remove("active");
+          nav.classList.remove("active");
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", function (event) {
+        const isClickInsideNav = nav.contains(event.target);
+        const isClickOnHamburger = hamburger.contains(event.target);
+
+        if (
+          !isClickInsideNav &&
+          !isClickOnHamburger &&
+          nav.classList.contains("active")
+        ) {
+          hamburger.classList.remove("active");
+          nav.classList.remove("active");
+        }
+      });
+    </script>
   </body>
 </html>
