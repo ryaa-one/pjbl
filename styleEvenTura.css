@@ -51,6 +51,7 @@ body {
   border-radius: 8px;
   align-items: center;
   transform: translate(0px, 50px);
+  cursor: pointer;
 }
 
 .kategori-event {
