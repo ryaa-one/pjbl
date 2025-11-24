@@ -1,8 +1,3 @@
-/* ========================================
-   HAMBURGER MENU - JAVASCRIPT
-   File ini mengatur fungsi buka/tutup menu
-   ======================================== */
-
 // Ambil element hamburger icon dan navigation
 const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("nav");

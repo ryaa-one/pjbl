@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EvenTura</title>
+    <link rel="stylesheet" type="text/css" href="pengaturanAkunAdmin.css" />
+  </head>
+
+  <body>
+    <header>
+      <img class="gambar-logo" src="logo6.png" />
+      <h1 class="EvenTura">EvenTura</h1>
+      <nav>
+        <ul>
+          <li><a href="landing-page.html">Beranda</a></li>
+          <li><a href="jelajah.html">Event</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+        </ul>
+        <div class="user-icon">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside>
+        <div class="sidebar-item">Dashboard</div>
+        <div class="sidebar-item">Event</div>
+        <div class="sidebar-item active">Pengaturan</div>
+        <div class="sidebar-itrm">Logout</div>
+      </aside>
+
+      <main class="content">
+        <h1>Pengaturan Akun</h1>
+        <p class="subtitle">Ubah informasi pribadi Anda di bawah ini.</p>
+
+        <form>
+          <div class="profile-photo">
+            <h3>Foto Profil</h3>
+            <div class="photo-container">
+              <div class="avatar"></div>
+              <button type="button" class="ubah-btn">Ganti</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="username">Nama Pengguna</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Masukkan nama pengguna Anda"
+              class="input-field"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Masukkan email Anda"
+              class="input-field"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Kata Sandi</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Masukkan kata sandi baru"
+              class="input-field"
+            />
+          </div>
+          <div class="simpan-container">
+            <button type="submit" class="simpan-btn">Simpan Perubahan</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
