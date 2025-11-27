@@ -3,31 +3,52 @@
 
 <head>
   <title>EvenTura</title>
-  <link rel="stylesheet" type="text/css" href="detail1.css">
-</head>
+  <link rel="stylesheet" type="text/css" href="detailEvent.css">
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <img class="gambar-logo" src="logo4.png" />
-    <h1 class="EvenTura">EvenTura</h1>
-    <nav>
-      <ul>
-        <li><a href="landing-page.html">Beranda</a></li>
-        <li><a href="jelajah.html" class="active">Event</a></li>
-        <li><a href="#about">Tentang Kami</a></li>
-      </ul>
-      <div class="user-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-          <circle cx="12" cy="7" r="4"></circle>
-        </svg>
+  <!-- Header -->
+    <header>
+      <img class="gambar-logo" src="Gambar-gambar/logo-web.svg" />
+      <h1 class="EvenTura">EvenTura</h1>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-  </header>
+      <!-- Navigation Menu -->
+      <nav id="nav">
+        <ul>
+          <!-- Menu "Profil" -->
+          <li class="mobile-only">
+            <a href="eventfavorit.html">Profil</a>
+          </li>
+          <!-- Menu Beranda -->
+          <li>
+            <a href="EvenTura.html">Beranda</a>
+          </li>
+          <!-- Menu Event -->
+          <li class="beranda">
+            <a href="jelajah.html">Event</a>
+          </li>
+          <!-- Menu Tentang Kami -->
+          <li>
+            <a href="tentangKami.html">Tentang kami</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Logo Profil - Hanya tampil di Desktop/Tablet (>600px), Hidden di Mobile -->
+      <a href="eventfavorit.html" class="container-logo desktop-only">
+        <img class="gambar-menu" src="Gambar-gambar/logo-profil.svg" />
+      </a>
+    </header>
 
   <div class="event">
     <span> Event > </span>Tari Kecak
@@ -134,48 +155,49 @@
   </div>
   </div>
 
-  <section class="footer">
-    <div class="footer-atas">
-      <div class="kiri-atas">
-        <div class="logo_eventura">
-          <img src="logo4.png">
-          <p id="satu">EvenTura</p>
+  <!-- Footer -->
+    <section class="footer">
+      <div class="footer-atas">
+        <div class="kiri-atas">
+          <div class="logo_eventura">
+            <img src="Gambar-gambar/logo-web.svg" />
+            <p id="satu">EvenTura</p>
+          </div>
+          <div>
+            <p id="dua">
+              Website yang berfungsi untuk memberikan kemudahan bagi masyarakat
+              dan wisatawan dalam menemukan event event<br />
+              pada setiap daerah di Nusantara. Selain itu website ini berfungsi
+              untuk memberikan pemahaman terhadap keberagaman<br />
+              event di Nusantara
+            </p>
+          </div>
         </div>
-        <div>
-          <p id="dua">
-            Website yang berfungsi untuk memberikan kemudahan bagi masyarakat
-            dan wisatawan dalam menemukan event event<br />
-            pada setiap daerah di Nusantara. Selain itu website ini berfungsi
-            untuk memberikan pemahaman terhadap keberagaman<br />
-            event di Nusantara
-          </p>
+        <div class="kanan-atas">
+          <ul class="navigasi">
+            <li class="kanan-satu">Navigasi</li>
+            <a href="EvenTura.html"><li>Beranda</li></a>
+            <a href="jelajah.html"><li>Event</li></a>
+            <a href="tentangKami.html"><li>Tentang</li></a>
+          </ul>
+          <ul class="contact">
+            <li class="kanan-dua">Contact</li>
+            <li>+1 (234) 567-890</li>
+            <li>contact@islandevents.com</li>
+          </ul>
         </div>
       </div>
-      <div class="kanan-atas">
-        <ul class="navigasi">
-          <li class="kanan-satu">Navigasi</li>
-          <li>Beranda</li>
-          <li>Event</li>
-          <li>Tentang</li>
-        </ul>
-        <ul class="contact">
-          <li class="kanan-dua">Contact</li>
-          <li>+1 (234) 567-890</li>
-          <li>contact@islandevents.com</li>
-        </ul>
+      <div class="footer-bawah">
+        <div class="kiri-bawah">
+          <img src="Gambar-gambar/vector-ig.png" />
+          <img src="Gambar-gambar/vector-fb.png" />
+          <img src="Gambar-gambar/vector-twit.png" />
+        </div>
+        <div class="kanan-bawah">
+          <p>© 2024 Island Events. All rights reserved.</p>
+        </div>
       </div>
-    </div>
-    <div class="footer-bawah">
-      <div class="kiri-bawah">
-        <img src="vector-ig.png" />
-        <img src="vector-fb.png" />
-        <img src="vector-twit.png" />
-      </div>
-      <div class="kanan-bawah">
-        <p>© 2024 Island Events. All rights reserved.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  <script src="navbar.js"></script>
 </body>
-
 </html>

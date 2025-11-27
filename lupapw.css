@@ -60,7 +60,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 18px;
-  padding: 10px 0;
 }
 
 /* Judul */
@@ -68,7 +67,7 @@ body {
   font-size: 68px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 43px;
   color: #000;
   line-height: 1;
 }
@@ -76,6 +75,7 @@ body {
 /* --- Input Form --- */
 .form-group {
   width: 100%;
+  padding-bottom: 15px;
 }
 
 .input-wrapper {
@@ -115,19 +115,6 @@ body {
   pointer-events: none;
 }
 
-.forgot-password {
-  display: block;
-  width: 100%;
-  max-width: 527px;
-  text-align: right;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: #00d6c4;
-  text-decoration: none;
-  margin-top: 8px;
-  font-weight: 500;
-}
-
 /* --- Tombol login --- */
 .btn-login {
   width: 400px;
@@ -142,14 +129,7 @@ body {
   font-weight: 700;
   cursor: pointer;
   margin-top: 15px;
-  margin-bottom: 10px;
   align-self: center;
-  transition: background 0.3s, color 0.3s;
-}
-
-.btn-login:hover {
-  background: #9a1515;
-  color: #fff;
 }
 
 /* --- Footer teks --- */
@@ -165,30 +145,6 @@ body {
   font-style: italic;
   text-decoration: none;
   font-weight: 500;
-}
-
-/* --- Divider --- */
-.divider {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 10px 0px 10px 0px;
-  width: 291px;
-  max-width: 100%;
-  align-self: center;
-}
-
-.divider-line {
-  flex: 1;
-  height: 1px;
-  background: #000;
-}
-
-.divider-text {
-  font-size: 16px;
-  font-weight: 300;
-  color: #000;
-  padding: 0 8px;
 }
 
 /* --- Tombol Google --- */
@@ -208,7 +164,7 @@ body {
   font-family: "Inter", sans-serif;
   transition: background 0.3s;
   align-self: center;
-  padding: 0px 16px;
+  padding: 0 16px;
 }
 
 .btn-google:hover {
@@ -217,29 +173,6 @@ body {
 
 .google-icon {
   font-size: 20px;
-}
-
-/* --- Logo sosial media --- */
-.logo {
-  margin-top: 10px;
-  align-self: center;
-  width: 100%;
-}
-
-.logo ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  gap: 18px;
-  padding: 0;
-  margin: 0;
-}
-
-.logo img {
-  display: block;
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
 }
 
 /* --- Responsive Tablet --- */

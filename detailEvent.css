@@ -1,578 +1,379 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #ffffff;
-    font-family: 'Inter', sans-serif;
-    color: #000;
-}
-
-header {
-    background: #ffffff;
-    color: #000000;
-    padding: 0 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-}
-/* NAMA BRAND */
-.gambar-logo {
-    width: 28px;
-    height: 28px;
-}
-
-.EvenTura {
-    font-family: sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    margin-right: 900px;
-}
-
-/* NAVBAR */
-nav {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    font-size: 0.8rem;
-}
-
-nav a.active {
-    text-decoration: underline;
-    color: #000000;
-}
-
-nav ul {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    margin: 0;
-}
-
-nav ul li {
-    margin-bottom: 10px;
-    margin-top: 5px;
-    text-align: center;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    transition: 0.3s;
-    padding: 2px;
-    text-align: center;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  color: #000;
 }
 
 .user-icon {
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 /* TULISAN ATAS GAMBAR */
 .event {
-    font-size: 12px;
-    margin-left: 30px;
-    padding: 2rem;
+  font-size: 12px;
+  margin: 0px 88px 30px 88px;
 }
 
 .event span {
-    color: #E0A75E;
+  color: #e0a75e;
 }
-
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
 }
-
 
 /* GAMBAR */
 .gambar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 1rem;
-    margin-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .gambar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .gambar-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 /* GAMBAR KIRI */
 .gambar-kiri {
-    grid-row: span 2;
+  grid-row: span 2;
 }
 
 .gambar-kiri img {
-    height: 100%;
-    min-height: 400px;
+  height: 100%;
+  min-height: 400px;
 }
 
 /* DUA GAMBAR DI KANAN */
 .gambar-item:not(.gambar-kiri) img {
-    height: 195px;
+  height: 195px;
 }
 
 /* TOMBOL FAV */
 .fav-btn {
-    position: absolute;
-    top: 2px;
-    right: 10px;
-    background: none;
-    border: none;
-    color: white;
-    width: 42px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1.5rem;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  width: 42px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .fav-btn:hover {
-    color: #ffdbab;
+  color: #ffdbab;
 }
 
 .content-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 /* DETAIL EVENT */
 .detail-content h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    margin-left: 5px;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 5px;
 }
 
 .detail-content p {
-    color: #666;
-    margin-bottom: 2rem;
-    margin-left: 5px;
-    line-height: 1.8;
-    font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 2rem;
+  margin-left: 5px;
+  line-height: 1.8;
+  font-size: 0.8rem;
 }
 
 /* TOMBOL SEBELAH TULISAN */
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: start;
 }
 
 .btn {
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .btn-fav {
-    background: #c41e3a;
-    color: white;
+  background: #c41e3a;
+  color: white;
 }
 
 .btn-share {
-    background: #f5e7b2;
-    border: 1px solid #c41e3a;
+  background: #f5e7b2;
+  border: 1px solid #c41e3a;
 }
 
 /* GARIS */
 .divider {
-    width: 90%;
-    justify-self: center;
-    border-bottom: 1px solid #000;
-    line-height: 0.1em;
-    padding: 25px;
+  width: 90%;
+  justify-self: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  padding: 25px;
 }
 
 /* INFO TGL & TEMPAT */
 .info-boxes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 3rem 0;
-    margin-left: 250px;
-    margin-right: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 3rem 0;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 .info-box {
-    background: #f5e7b2;
-    padding: 1.5rem;
-    border-radius: 12px;
+  background: #f5e7b2;
+  padding: 1.5rem;
+  border-radius: 12px;
 }
 
 .info-box h3 {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .info-box p {
-    margin: 0.25rem 0;
-    color: #666;
+  margin: 0.25rem 0;
+  color: #666;
 }
 
 /* KOTAK REVIEW */
 .reviews {
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 70px;
-    padding: 35px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 70px;
+  padding: 35px;
 }
 
 .reviews h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .review-card {
-    background: white;
-    border: 2px solid #e0e0e0;
-    border-radius: 12px;
-    padding: 0.8rem;
-    margin-bottom: 2rem;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
 }
 
 .review-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .review-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #ddd;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ddd;
 }
 
 .review-info h4 {
-    margin-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .review-tgl {
-    color: #E0A75E;
-    font-size: 0.9rem;
+  color: #e0a75e;
+  font-size: 0.9rem;
 }
 
 .stars {
-    color: #ffd700;
-    margin-bottom: 0.5rem;
-    margin-left: 54rem;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+  margin-left: 54rem;
 }
 
 .review-text {
-    color: #000000;
-    line-height: 1.6;
-    font-size: 0.8rem;
+  color: #000000;
+  line-height: 1.6;
+  font-size: 0.8rem;
 }
-
-
-/*FOOTER*/
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: sans-serif;
-    width: 100%;
-    height: 257px;
-    background-color: #f5e7b2;
-    padding: 22px 89px 22px 87px;
-}
-
-#satu {
-    color: #000000;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-#dua {
-    color: #625c48;
-    font-size: 10px;
-}
-
-.footer-atas {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #aa554b;
-    margin: 0 -89px 22px -87px;
-    padding: 22px 89px 22px 87px;
-}
-
-.logo_eventura {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
-}
-
-.kanan-atas {
-    display: flex;
-    gap: 60px;
-    color: #312e24;
-    margin-bottom: 12px;
-}
-
-.kanan-atas ul {
-    list-style: none;
-}
-
-.navigasi {
-    width: 81px;
-}
-
-.navigasi li {
-    margin-bottom: 12px;
-}
-
-.kanan-satu {
-    color: #aa554b;
-    font-weight: bold;
-}
-
-.kanan-dua {
-    color: #973131;
-    font-weight: bold;
-}
-
-.contact li {
-    margin-bottom: 12px;
-}
-
-.footer-bawah {
-    display: flex;
-    justify-content: space-between;
-}
-
-.kiri-bawah {
-    display: flex;
-    gap: 24px;
-}
-
-.kanan-bawah {
-    color: #625c47;
-    font-family: sans-serif;
-    font-size: medium;
-    font-size: 14px;
-}
-
-
 @media (max-width: 1024px) {
-    .container {
-        padding: 0 4%;
-    }
+  .container {
+    padding: 0 4%;
+  }
 
-    .content-wrapper {
-        grid-template-columns: 1.5fr 1fr;
-        gap: 2rem;
-    }
+  .content-wrapper {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+  }
 
-    .detail-content h1 {
-        font-size: 2.2rem;
-    }
+  .detail-content h1 {
+    font-size: 2.2rem;
+  }
 
-    .footer {
-        grid-template-columns: 1.5fr 1fr 1fr;
-        gap: 2rem;
-    }
-}
-
-/* MOBILE (max 768px) */
-@media (max-width: 768px) {
-
-    /* Navbar Mobile */
-    .nav {
-        padding: 0.5rem 4%;
-    }
-
-    .nav ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: white;
-        flex-direction: column;
-        gap: 0;
-        padding: 1rem 0;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav a.active {
-        display: flex;
-    }
-
-    .nav li {
-        padding: 0.8rem 4%;
-        border-bottom: 1px solid #f0f0f0;
-    }
-
+  /* MOBILE (max 768px) */
+  @media (max-width: 768px) {
     /* Container */
     .container {
-        padding: 0 4%;
+      padding: 0 4%;
     }
 
     /* Gambar */
     .gambar {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+      grid-template-columns: 1fr;
+      gap: 1rem;
     }
 
     .gambar-kiri {
-        grid-row: span 1;
+      grid-row: span 1;
     }
 
     .gambar-kiri img {
-        min-height: 280px;
+      min-height: 280px;
     }
 
     .gambar-lain:not(.gambar-kiri) img {
-        height: 180px;
+      height: 180px;
     }
 
     /* Content */
     .content-wrapper {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
     }
 
     .detail-content h1 {
-        font-size: 2rem;
+      font-size: 2rem;
     }
 
     .detail-content p {
-        font-size: 0.95rem;
+      font-size: 0.95rem;
     }
 
     .sidebar {
-        margin-bottom: 1rem;
+      margin-bottom: 1rem;
     }
 
     /* Info Boxes */
     .info-boxes {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        margin: 2rem 0;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin: 2rem 0;
     }
 
     .info-box {
-        padding: 1.5rem;
+      padding: 1.5rem;
     }
 
     .info-box h3 {
-        font-size: 1rem;
+      font-size: 1rem;
     }
 
     /* Reviews */
     .reviews {
-        margin: 3rem 0;
+      margin: 3rem 0;
     }
 
     .reviews h2 {
-        font-size: 1.7rem;
+      font-size: 1.7rem;
     }
 
     .review-card {
-        padding: 1.3rem;
+      padding: 1.3rem;
     }
 
     .review-avatar {
-        width: 45px;
-        height: 45px;
+      width: 45px;
+      height: 45px;
     }
+  }
 
-    /* Footer */
-    footer {
-        padding: 2.5rem 4%;
-        margin-top: 3rem;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    #dua {
-        font-size: 0.95rem;
-    }
-}
-
-/* SMALL MOBILE (max 480px) */
-@media (max-width: 480px) {
+  /* SMALL MOBILE (max 480px) */
+  @media (max-width: 480px) {
     .EvenTura {
-        font-size: 1.1rem;
+      font-size: 1.1rem;
     }
 
     .gambar-logo {
-        width: 28px;
-        height: 28px;
+      width: 28px;
+      height: 28px;
     }
 
     .user-icon {
-        width: 32px;
-        height: 32px;
+      width: 32px;
+      height: 32px;
     }
 
     .detail-content h1 {
-        font-size: 1.7rem;
+      font-size: 1.7rem;
     }
 
     .gambar-kiri img {
-        min-height: 220px;
+      min-height: 220px;
     }
 
     .gambar-lain:not(.gambar-kiri) img {
-        height: 150px;
+      height: 150px;
     }
 
     .btn {
-        padding: 0.9rem 1.2rem;
-        font-size: 0.95rem;
+      padding: 0.9rem 1.2rem;
+      font-size: 0.95rem;
     }
 
     .info-box {
-        padding: 1.2rem;
+      padding: 1.2rem;
     }
 
     .review-card {
-        padding: 1rem;
+      padding: 1rem;
     }
 
     .reviews h2 {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
+  }
 }
