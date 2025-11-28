@@ -2,18 +2,14 @@
 const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("nav");
 
-/* ========================================
-   FUNGSI 1: Toggle Menu (Buka/Tutup)
-   ======================================== */
+/* FUNGSI 1: Toggle Menu (Buka/Tutup) */
 // Ketika hamburger diklik, toggle class "active"
 hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("active"); // Animasi hamburger jadi X
   nav.classList.toggle("active"); // Tampilkan/sembunyikan menu
 });
 
-/* ========================================
-   FUNGSI 2: Auto Close saat Menu Diklik
-   ======================================== */
+// FUNGSI 2: Auto Close saat Menu Diklik
 // Ambil semua link di dalam navigation
 const navLinks = nav.querySelectorAll("a");
 
@@ -26,9 +22,7 @@ navLinks.forEach((link) => {
   });
 });
 
-/* ========================================
-   FUNGSI 3: Auto Close saat Klik di Luar Menu
-   ======================================== */
+// FUNGSI 3: Auto Close saat Klik di Luar Menu
 document.addEventListener("click", function (event) {
   // Cek apakah klik di dalam nav
   const isClickInsideNav = nav.contains(event.target);

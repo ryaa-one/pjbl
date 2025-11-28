@@ -234,7 +234,7 @@
       </div>
     </section>
 
-    <!-- JavaScript for Hamburger Menu -->
+    <!-- JavaScript untuk Hamburger Menu -->
     <script>
       const hamburger = document.getElementById("hamburger");
       const nav = document.getElementById("nav");
@@ -244,7 +244,7 @@
         nav.classList.toggle("active");
       });
 
-      // Close menu when clicking on a link
+      // Menutup menu ketika mengklik tautan
       const navLinks = nav.querySelectorAll("a");
       navLinks.forEach((link) => {
         link.addEventListener("click", function () {
@@ -253,7 +253,7 @@
         });
       });
 
-      // Close menu when clicking outside
+      // Menutup menu ketika mengklik di luar menu
       document.addEventListener("click", function (event) {
         const isClickInsideNav = nav.contains(event.target);
         const isClickOnHamburger = hamburger.contains(event.target);

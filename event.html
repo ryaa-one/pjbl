@@ -1,126 +1,150 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>EvenTura</title>
+    <link rel="stylesheet" type="text/css" href="event.css" />
+    <link rel="stylesheet" type="text/css" href="navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <title> EvenTura </title>
-    <link rel="stylesheet" type="text/css" href="event.css">
-</head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-
-<body>
+  <body>
     <header>
-        <img class="gambar-logo" src="logo4.png" />
-        <h1 class="EvenTura">EvenTura</h1>
-        <nav>
-            <ul>
-                <li><a href="landing-page.html">Beranda</a></li>
-                <li><a href="jelajah.html" class="active">Event</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
-            </ul>
-            <div class="user-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-            </div>
-        </nav>
+      <img class="gambar-logo" src="Gambar-gambar/logo-web.svg" />
+      <h1 class="EvenTura">EvenTura</h1>
+
+      <nav>
+        <ul>
+          <li><a href="landing-page.html">Beranda</a></li>
+          <li><a href="jelajah.html">Event</a></li>
+          <li><a href="">Tentang kami</a></li>
+        </ul>
+        <div class="user-icon">
+          <img src="Gambar-gambar/logo-profil.svg" />
+        </div>
+      </nav>
     </header>
 
     <div class="container">
-        <aside class="sidebar">
-            <a href="dashboard.html"><div class="sidebar-item"> Dashboard </div></a>
-            <div class="sidebar-item active"> Event </div>
-            <div class="sidebar-item"> Pengaturan </div>
-            <div class="sidebar-item"> Logout </div>
-        </aside>
+      <aside class="sidebar">
+        <a href="dashboard.html">
+          <div class="sidebar-item">
+            <img src="Gambar-gambar/dashboardIcon.png" /> Dashboard
+          </div>
+        </a>
+        <a href="event.html">
+          <div class="sidebar-item active">
+            <img src="Gambar-gambar/eventA.png" /> Event
+          </div>
+        </a>
+        <a href="pengaturan-akun.html">
+          <div class="sidebar-item">
+            <img src="Gambar-gambar/IconPengaturan.png" /> Pengaturan
+          </div>
+        </a>
+        <a href="landing-page.html">
+          <div class="sidebar-item">
+            <img src="Gambar-gambar/IconLogout.png" /> Logout
+          </div>
+        </a>
+      </aside>
 
-        <main class="main-content">
-            <div class="content-header">
-                <h1>Events</h1>
-                <a href="eventBaru.html"><button class="add-btn">
-                    <span>+</span>
-                    <span>Add Event</span>
-                </button></a>
-            </div>
+      <main class="content">
+        <div class="content-header">
+          <h1>Events</h1>
+          <a href="eventBaru.html"
+            ><button class="add-btn">
+              <span>+</span>
+              <span>Add Event</span>
+            </button></a
+          >
+        </div>
 
-            <div class="search-box">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <path d="m21 21-4.35-4.35"></path>
-                </svg>
-                <input type="text" placeholder="Search events">
-            </div>
+        <div class="search-box">
+          <img src="Gambar-gambar/search.png" class="search-icon" />
+          <input type="text" placeholder="Search events" />
+        </div>
 
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>EVENT NAME</th>
-                            <th>CATEGORY</th>
-                            <th>DATE</th>
-                            <th>LOCATION</th>
-                            <th>ACTIONS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Festival Danau Toba</td>
-                            <td><span class="category-badge category-culture">Culture</span></td>
-                            <td>2024-08-15</td>
-                            <td>Lake Toba, North Sumatra</td>
-                            <td class="actions">
-                                <a href="edit.html"><button class="action-btn edit-btn">Edit</button></a>
-                                <button class="action-btn delete-btn">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Java Jazz Festival</td>
-                            <td><span class="category-badge category-music">Music</span></td>
-                            <td>2024-09-20</td>
-                            <td>Jakarta</td>
-                            <td class="actions">
-                                <button class="action-btn edit-btn">Edit</button>
-                                <button class="action-btn delete-btn">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Bali Arts Festival</td>
-                            <td><span class="category-badge category-arts">Arts</span></td>
-                            <td>2024-06-10</td>
-                            <td>Denpasar, Bali</td>
-                            <td class="actions">
-                                <button class="action-btn edit-btn">Edit</button>
-                                <button class="action-btn delete-btn">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Toraja International Festival</td>
-                            <td><span class="category-badge category-culture">Culture</span></td>
-                            <td>2024-07-05</td>
-                            <td>Tana Toraja, South Sulawesi</td>
-                            <td class="actions">
-                                <button class="action-btn edit-btn">Edit</button>
-                                <button class="action-btn delete-btn">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Sunda Culture Festival</td>
-                            <td><span class="category-badge category-culture">Culture</span></td>
-                            <td>2024-10-22</td>
-                            <td>Bandung, West Java</td>
-                            <td class="actions">
-                                <button class="action-btn edit-btn">Edit</button>
-                                <button class="action-btn delete-btn">Delete</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </main>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>EVENT NAME</th>
+                <th>CATEGORY</th>
+                <th>DATE</th>
+                <th>LOCATION</th>
+                <th>ACTIONS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Festival Danau Toba</td>
+                <td>
+                  <span class="category-badge category-culture">Culture</span>
+                </td>
+                <td>2024-08-15</td>
+                <td>Lake Toba, North Sumatra</td>
+                <td class="actions">
+                  <a href="edit.html"
+                    ><button class="action-btn edit-btn">Edit</button></a
+                  >
+                  <button class="action-btn delete-btn">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Java Jazz Festival</td>
+                <td>
+                  <span class="category-badge category-music">Music</span>
+                </td>
+                <td>2024-09-20</td>
+                <td>Jakarta</td>
+                <td class="actions">
+                  <button class="action-btn edit-btn">Edit</button>
+                  <button class="action-btn delete-btn">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Bali Arts Festival</td>
+                <td><span class="category-badge category-arts">Arts</span></td>
+                <td>2024-06-10</td>
+                <td>Denpasar, Bali</td>
+                <td class="actions">
+                  <button class="action-btn edit-btn">Edit</button>
+                  <button class="action-btn delete-btn">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Toraja International Festival</td>
+                <td>
+                  <span class="category-badge category-culture">Culture</span>
+                </td>
+                <td>2024-07-05</td>
+                <td>Tana Toraja, South Sulawesi</td>
+                <td class="actions">
+                  <button class="action-btn edit-btn">Edit</button>
+                  <button class="action-btn delete-btn">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Sunda Culture Festival</td>
+                <td>
+                  <span class="category-badge category-culture">Culture</span>
+                </td>
+                <td>2024-10-22</td>
+                <td>Bandung, West Java</td>
+                <td class="actions">
+                  <button class="action-btn edit-btn">Edit</button>
+                  <button class="action-btn delete-btn">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
     </div>
-</body>
-
+  </body>
 </html>

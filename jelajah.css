@@ -13,8 +13,7 @@ body {
 .hero {
   background-image: url("TubabaArt");
   height: 28vh;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 0px 88px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("hero\ section.png") center/cover no-repeat;
   display: flex;
@@ -88,7 +87,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 20px 40px;
+  padding: 0px 88px;
   width: 100%;
   margin-top: 50px;
 }
