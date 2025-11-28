@@ -86,11 +86,8 @@ nav ul li a {
   font-weight: bold;
 }
 
-/* ========================================
-   HAMBURGER MENU ICON
-   ======================================== */
 .hamburger {
-  display: none; /* Hidden di desktop */
+  display: none;
   flex-direction: column;
   cursor: pointer;
   z-index: 9999;
