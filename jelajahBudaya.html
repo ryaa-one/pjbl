@@ -3,8 +3,9 @@
   <head>
     <title>EvenTura</title>
     <link rel="stylesheet" type="text/css" href="jelajahBudaya.css" />
-    <link rel="stylesheet" type="text/css" href="footer.css" />
     <link rel="stylesheet" type="text/css" href="navbar.css" />
+    <link rel="stylesheet" type="text/css" href="footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -58,66 +59,62 @@
       </p>
     </section>
 
-    <div class="search-filter-section">
-      <div class="search-box">
-        <svg
-          class="search-icon"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <circle cx="11" cy="11" r="8"></circle>
-          <path d="m21 21-4.35-4.35"></path>
-        </svg>
-        <input type="text" class="search-input" placeholder="Cari event..." />
+    <!-- Header: Search bar kiri, filter kanan -->
+    <div class="header">
+      <div class="search-bar">
+        <input type="text" placeholder="Cari event..." />
       </div>
-      <div class="ktg-buttons">
-        <a href="jelajah.html"><button class="ktg-btn">Semua</button></a>
-        <a href="budaya.html"><button class="ktg-btn active">Budaya</button></a>
-        <a href="musik.html"><button class="ktg-btn">Musik</button></a>
-        <a href="seni.html"><button class="ktg-btn">Seni</button></a>
+
+      <div class="filter-group">
+        <a href="jelajah.html"><button class="filter-btn">Semua</button></a>
+        <a href="jelajahBudaya.html"><button class="filter-btn active">Budaya</button></a>
+        <a href="jelajahMusik.html"><button class="filter-btn">Musik</button></a>
+        <a href="jelajahSeni.html"><button class="filter-btn">Seni</button></a>
       </div>
     </div>
 
+    <!-- CARD EVENT -->
     <div class="event-grid">
+      <!-- Card 1 -->
       <div class="event-card">
-        <img src="Gambar-gambar/tk1.png" class="gambar" />
-        <h4 class="card-title">Tari Kecak</h4>
-        <p class="card-p">Setiap hari, 18:00-19:00, 19:00-20:00 - Bali</p>
-        <div class="card-buttons">
-          <button class="btn btn-ktg">Budaya</button>
-          <a href="detail1.html"
-            ><button class="btn detail">Lihat Detail</button></a
-          >
+        <img src="Gambar-gambar/tk1.png" />
+        <div class="event-content">
+          <h3 class="event-title">Tari Kecak</h3>
+          <p class="event-info">Setiap hari, 18:00-20:00 - Bali</p>
+          <div class="event-header">
+            <span class="category">Budaya</span>
+            <span class="detail-link">Lihat Detail</span>
+          </div>
         </div>
-      </div>
+      </div></a>
 
+      <!-- Card 2 -->
+      <a href="#">
       <div class="event-card">
-        <img src="Gambar-gambar/gandrungSewu.jpeg" class="gambar" />
-        <h4 class="card-title">Gandrung Sewu</h4>
-        <p class="card-p">Oktober 2025 - Banyuwangi</p>
-        <div class="card-buttons">
-          <button class="btn btn-ktg">Budaya</button>
-          <a href="detail1.html"
-            ><button class="btn detail">Lihat Detail</button></a
-          >
+        <img src="Gambar-gambar/gandrungSewu.jpeg" />
+        <div class="event-content">
+          <h3 class="event-title">Gandrung Sewu</h3>
+          <p class="event-info">Oktober 2025 - Banyuwangi</p>
+          <div class="event-header">
+            <span class="category">Budaya</span>
+            <span class="detail-link">Lihat Detail</span>
+          </div>
         </div>
-      </div>
+      </div></a>
 
+      <!-- Card 3 -->
+      <a href="#">
       <div class="event-card">
-        <img src="Gambar-gambar/PerangTopat.jpg" class="gambar" />
-        <h4 class="card-title">Perang Topat</h4>
-        <p class="card-p">Sabtu, 29 November 2025 - Lombok Barat</p>
-        <div class="card-buttons">
-          <button class="btn btn-ktg">Budaya</button>
-          <a href="detail1.html"
-            ><button class="btn detail">Lihat Detail</button></a
-          >
+        <img src="Gambar-gambar/PerangTopat.jpg" />
+        <div class="event-content">
+          <h3 class="event-title">Perang Topat</h3>
+          <p class="event-info">29 November 2025 - Lombok Barat</p>
+          <div class="event-header">
+            <span class="category">Budaya</span>
+            <span class="detail-link">Lihat Detail</span>
+          </div>
         </div>
-      </div>
+      </div></a>
     </div>
 
     <!-- Footer -->

@@ -3,8 +3,8 @@
   <head>
     <title>EvenTura</title>
     <link rel="stylesheet" type="text/css" href="jelajahSeni.css" />
-    <link rel="stylesheet" type="text/css" href="footer.css" />
     <link rel="stylesheet" type="text/css" href="navbar.css" />
+    <link rel="stylesheet" type="text/css" href="footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -59,61 +59,66 @@
       </p>
     </section>
 
-    <div class="search-filter-section">
-      <div class="search-box">
-        <svg
-          class="search-icon"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <circle cx="11" cy="11" r="8"></circle>
-          <path d="m21 21-4.35-4.35"></path>
-        </svg>
-        <input type="text" class="search-input" placeholder="Cari event..." />
+    <!-- Header: Search bar kiri, filter kanan -->
+    <div class="header">
+      <div class="search-bar">
+        <input type="text" placeholder="Cari event..." />
       </div>
-      <div class="ktg-buttons">
-        <a href="jelajah.html"><button class="ktg-btn">Semua</button></a>
-        <a href="budaya.html"><button class="ktg-btn">Budaya</button></a>
-        <a href="musik.html"><button class="ktg-btn">Musik</button></a>
-        <a href="seni.html"><button class="ktg-btn active">Seni</button></a>
+
+      <div class="filter-group">
+        <a href="jelajah.html"><button class="filter-btn">Semua</button></a>
+        <a href="jelajahBudaya.html"><button class="filter-btn">Budaya</button></a>
+        <a href="jelajahMusik.html"><button class="filter-btn">Musik</button></a>
+        <a href="jelajahSeni.html"><button class="filter-btn active">Seni</button></a>
       </div>
     </div>
 
+    <!-- CARD EVENT -->
     <div class="event-grid">
-      <div class="event-card">
-        <img src="Gambar-gambar/artJog.png" class="gambar" />
-        <h4 class="card-title">ARTJOG</h4>
-        <p class="card-p">Jumat, 20 Juni 2025 - Jogjakarta</p>
-        <div class="card-buttons">
-          <button class="btn btn-ktg">Seni</button>
-          <button class="btn btn-detail">Lihat Detail</button>
-        </div>
-      </div>
+      <!-- Card 7 -->
+      <a href="#">
+        <div class="event-card">
+          <img src="Gambar-gambar/artjog1.png" />
+          <div class="event-content">
+            <h3 class="event-title">ARTJOG</h3>
+            <p class="event-info">20 Juni 2025 - Jogjakarta</p>
+            <div class="event-header">
+              <span class="category">Seni</span>
+              <span class="detail-link">Lihat Detail</span>
+            </div>
+          </div>
+        </div></a
+      >
 
+      <!-- Card 8 -->
+      <a href="#">
       <div class="event-card">
-        <img src="Gambar-gambar/artJakarta.jpeg" class="gambar" />
-        <h4 class="card-title">Art Jakarta</h4>
-        <p class="card-p">Jumat, 3-5 Oktober 2025 - Jakarta</p>
-        <div class="card-buttons">
-          <button class="btn btn-ktg">Seni</button>
-          <button class="btn btn-detail">Lihat Detail</button>
+        <img src="Gambar-gambar/artJakarta1.png" />
+        <div class="event-content">
+          <h3 class="event-title">Art Jakarta</h3>
+          <p class="event-info">3-5 Oktober 2025 - Jakarta</p>
+          <div class="event-header">
+            <span class="category">Seni</span>
+            <span class="detail-link">Lihat Detail</span>
+          </div>
         </div>
-      </div>
+      </div></a>
 
+      <!-- Card 9 -->
+      <a href="#">
       <div class="event-card">
-        <img src="Gambar-gambar/tubaba.jpeg" class="gambar" />
-        <h4 class="card-title">Tubaba Art Festival</h4>
-        <p class="card-p">27 September - 01 Oktober 2025 - Lampung</p>
-        <div class="card-buttons">
-          <button class="btn btn-ktg">Seni</button>
-          <button class="btn btn-detail">Lihat Detail</button>
+        <img src="Gambar-gambar/tubaba1.png" />
+        <div class="event-content">
+          <h3 class="event-title">Tubaba Art Festival</h3>
+          <p class="event-info">27 Sept - 1 Okt 2025 - Lampung</p>
+          <div class="event-header">
+            <span class="category">Seni</span>
+            <span class="detail-link">Lihat Detail</span>
+          </div>
         </div>
       </div>
-    </div>
+    </div></a>
+  </div>
 
     <!-- Footer -->
     <section class="footer">
